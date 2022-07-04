@@ -1,0 +1,4 @@
+<mat-form-field style="width: 100%; padding: 20px; box-sizing: border-box;">
+	<input type="text" matInput placeholder="Name" [(ngModel)]="name" autocomplete="off">
+</mat-form-field>
+<button mat-flat-button [disabled]="!name.length" color="primary" type="button" (click)="OpenModal()" style="margin:0px 20px;">Open Modal</button>
